@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    color: white;
+}
+
+header > h1{
+    text-align: center;
+}
+
+header > #itens > ul > li {
+    background-color: white;
+}
+
+header{
+    background-color: rgb(87, 138, 186);
+    height: 200px;
+}
+body{
+    background-color: rgb(113, 155, 86);
+}
+#textt1{
+    background-color: white;
+    margin: 80px;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: yellow;
+}
