@@ -1,14 +1,29 @@
 @charset "UTF-8";
 
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 h1{
     color: white;
 }
+/* Animação fadeIn e moveUp para o texto "Myserve" */
+@keyframes fadeInMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.fade-in-move-up {
+    animation: fadeInMoveUp 3s ease-in-out;
+}
 header > h1{
     text-align: center;
 }
@@ -18,20 +33,22 @@ header > #itens > ul > li {
 }
 
 header{
-    background-color: rgb(87, 138, 186);
+    background-color: #101728;
     height: 200px;
 }
+
 body{
     background-color: rgb(113, 155, 86);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #textt1{
     background-color: white;
     margin: 80px;
     border-radius: 5px;
 }
 
-/*ZONA DE RODAPE  */
+/* ZONA DE RODAPÉ */
 
 footer{
     background-color: #333;
@@ -39,6 +56,7 @@ footer{
     padding: 20px 0;
     font-family: Arial, sans-serif;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -91,4 +109,101 @@ footer{
         align-items: center;
         text-align: center;
     }
+}
+
+/* Botão entrar */
+body {
+    font-family: sans-serif;
+    background-color: #101728;
+    font-weight: bold;
+}
+
+.text-box {
+    margin-left: 44vw;
+    margin-top: 42vh;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #277890;
+    color: #fff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-white::after {
+    background-color: #277890;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animate {
+    animation: moveInBottom 2s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/*espaço entre o botão e o rodapé*/
+.text-box {
+    margin-left: 44vw;
+    margin-top: 42vh;
+    margin-bottom: 400px; /* Adicionado para criar espaço abaixo do botão */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 500px; /* Adicionado para criar espaço acima do rodapé */
+}
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px; /* Definido um tamanho pequeno */
+    height: auto;
 }
