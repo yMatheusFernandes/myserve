@@ -1,0 +1,135 @@
+/* Estilo global para o corpo da página */
+body {
+    display: flex; /* Define um contêiner flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura da tela inteira */
+    background: url(CLOUD.jpg) no-repeat center center; /* Define a imagem de fundo */
+    background-size: cover; /* Cobre toda a tela com a imagem de fundo */
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+}
+
+/* Definição da animação fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para o contêiner do formulário */
+.wrapper {
+    background-color: transparent; /* Define a cor de fundo branca com transparência */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Define a borda */
+    backdrop-filter: blur(20px);
+    padding: 20px; /* Define um espaçamento interno de 20px */
+    border-radius: 8px; /* Arredonda os cantos do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+    width: 300px; /* Define a largura do contêiner */
+    opacity: 0; /* Define a opacidade inicial */
+    animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex; /* Define um contêiner flexível */
+    flex-direction: column; /* Coloca os elementos em coluna */
+}
+
+/* Estilos para o título do formulário */
+h1 {
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+    font-size: 24px; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o contêiner dos campos de entrada */
+.input-box {
+    position: relative; /* Define um posicionamento relativo */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+}
+
+/* Estilos para os campos de entrada */
+.input-box input {
+    width: 87%; /* Define a largura como 100% do contêiner pai */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    padding-left: 40px; /* Adiciona um espaçamento interno à esquerda */
+    border: 1px solid #ccc; /* Define uma borda cinza clara */
+    border-radius: 4px; /* Arredonda os cantos */
+}
+
+/* Estilos para os ícones dentro dos campos de entrada */
+.input-box i {
+    position: absolute; /* Define um posicionamento absoluto */
+    top: 50%; /* Centraliza verticalmente */
+    left: 10px; /* Define a posição à esquerda */
+    transform: translateY(-50%); /* Ajusta a posição verticalmente */
+    color: #888; /* Define a cor do ícone */
+}
+
+/* Estilos para a seção de lembrar senha e link de recuperação */
+.remember-forgot {
+    display: flex; /* Define um contêiner flexível */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+}
+
+/* Estilos para o rótulo de lembrar senha */
+.remember-forgot label {
+    display: flex; /* Define um contêiner flexível */
+    align-items: center; /* Centraliza verticalmente os elementos */
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o link de recuperação de senha */
+.remember-forgot a {
+    font-size: 14px; /* Define o tamanho da fonte */
+    color: #007bff; /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Efeito de hover para o link de recuperação de senha */
+.remember-forgot a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+
+/* Estilos para o botão de login */
+.btn {
+    background-color: #7ec4cf; /* Define a cor de fundo */
+    color: #fff; /* Define a cor do texto como branco */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Arredonda os cantos */
+    cursor: pointer; /* Altera o cursor para um ponteiro no hover */
+    font-size: 16px; /* Define o tamanho da fonte */
+}
+
+/* Efeito de hover para o botão de login */
+.btn:hover {
+    background-color: #4a636d; /* Altera a cor de fundo no hover */
+}
+
+/* Estilos para a seção de registro */
+.register {
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o parágrafo de registro */
+.register p {
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o link de registro */
+.register a {
+    color: #007bff; /* Define a cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Efeito de hover para o link de registro */
+.register a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}

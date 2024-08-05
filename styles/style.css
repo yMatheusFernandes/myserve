@@ -33,9 +33,38 @@ header > #itens > ul > li {
 }
 
 header{
-    background-color: #101728;
+    background-color: transparent;
     height: 200px;
 }
+
+header > h2{
+    text-align: center;
+   
+}
+.button-container {
+    display: flex;
+    flex-direction: column; /* Coloca o título e o botão em uma coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Ocupa toda a altura da viewport */
+    position: relative; /* Necessário para qualquer posicionamento absoluto, se necessário */
+}
+.button-heading {
+    margin-bottom: 20px; /* Espaçamento entre o título e o botão */
+    text-align: center; /* Centraliza o texto do título */
+    color: #fff; /* Ajuste a cor do título conforme necessário */
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+.button-heading {
+    position: absolute;
+    top: 20%; /* Ajuste a posição vertical do título */
+    left: 50%; /* Ajuste a posição horizontal do título */
+    transform: translate(-50%, -50%); /* Centraliza o título */
+    text-align: center;
+    color: #fff;
+    font-size: 24px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
 
 body{
     background-color: rgb(113, 155, 86);
@@ -116,12 +145,49 @@ body {
     font-family: sans-serif;
     background-color: #101728;
     font-weight: bold;
+    margin: 0; /* Certifique-se de que não há margens padrão aplicadas ao corpo */
 }
 
-.text-box {
-    margin-left: 44vw;
-    margin-top: 42vh;
+/* Outros estilos do botão */
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative; /* Use relative para qualquer posicionamento absoluto dentro dele */
 }
+
+/* Ajuste para o rodapé se necessário */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    /* Remover margem superior desnecessária */
+    margin-top: 0; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    align-items: center; /* Centraliza o botão verticalmente */
+    height: 90vh; /* Ocupa toda a altura da viewport */
+    position: relative; /* Necessário para posicionar elementos absolutamente se necessário */
+    margin: 0; /* Remova margens para centralizar corretamente */
+}
+
+/* Remova o estilo desnecessário da classe .text-box */
+.text-box {
+    margin: 0; /* Remover margens desnecessárias */
+}
+
+.btn {
+    margin: 0; /* Remover margens do botão */
+    /* Outros estilos do botão aqui */
+}
+
 
 .btn:link,
 .btn:visited {
@@ -206,4 +272,16 @@ footer {
     left: 10px;
     width: 50px; /* Definido um tamanho pequeno */
     height: auto;
+}
+
+/* Vídeo de fundo */
+#background-video {
+    position: fixed; /* Fixa o vídeo em relação à viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100%; /* Ocupa toda a altura da tela */
+    object-fit: cover; /* Cobre toda a área disponível sem distorcer */
+    z-index: -1; /* Coloca o vídeo atrás dos outros elementos */
+    opacity: 0.5; /* Define a opacidade do vídeo para não esconder o conteúdo */
 }
