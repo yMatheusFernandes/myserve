@@ -12,11 +12,11 @@
     <form action="">
         <h1>Login</h1>
         <div class="input-box">
-            <input type="text" placeholder="Username" required>
+            <input type="text" placeholder="Username" id="Username" required>
             <i class='bx bxs-user'></i>
         </div>
         <div class="input-box">
-            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Password" id="Password" required>
             <i class='bx bxs-lock-alt' ></i>
         </div>
 
@@ -24,11 +24,24 @@
             <label><input type="checkbox"> Remember me</label>
             <a href="#">Forgot password?</a>
         </div>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" onclick="logar(); return false" class="btn">Login</button>
         <div class="register link">
             <p>Não tem acesso à conta? <a href="#">Register</a></p>
         </div>
     </form>
    </div>
+   <script>
+    function logar(){
+        var Username = document.getElementById("Username").value;
+        var Password = document.getElementById("Password").value;
+        
+        if(Username === "admin" && Password === "admin"){
+            alert('Sucesso');
+            location.href = "home.html";
+        } else {
+            alert('Erro');
+        }
+    }
+   </script>
 </body>
 </html>
