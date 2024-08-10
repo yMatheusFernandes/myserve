@@ -36,7 +36,9 @@ header {
     background-color: transparent;
     padding: 20px 0;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header img.logo {
@@ -45,19 +47,22 @@ header img.logo {
     position: absolute;
     top: 10px;
     left: 10px;
-}
-
-header h1, header h2 {
-    color: white;
-    
+   
 }
 
 header h1 {
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 header h2 {
+    margin-top: 100px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 .fade-in-move-up {
@@ -87,7 +92,7 @@ main {
 
 .button-container {
     margin-top: 110px; 
-    margin-bottom: 400px; 
+    margin-bottom: 100px; 
     
 }
 
@@ -112,7 +117,7 @@ main {
 }
 
 .features strong {
-    color: #f4b400;
+    color: #7EC4CF;
 }
 
 .btn {
@@ -126,12 +131,12 @@ main {
 }
 
 .btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-1px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-    transform: translateY(-1px);
+    transform: translateY(0px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -167,7 +172,7 @@ footer {
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #f4b400;
+    color: #00d8f4;
 }
 
 .footer-section p,
