@@ -26,9 +26,10 @@ body {
 }
 
 header {
-    text-align: center;
     background-color: transparent;
     padding: 20px 0;
+    text-align: center;
+
 }
 
 header img.logo {
@@ -41,14 +42,20 @@ header img.logo {
 
 header h1, header h2 {
     color: white;
+    
 }
 
 header h1 {
     margin-bottom: 10px;
+    text-align: center;
+
 }
 
 header h2 {
     margin-bottom: 20px;
+    margin-top: 200px;
+    text-align: center;
+
 }
 
 .fade-in-move-up {
@@ -76,13 +83,13 @@ main {
 }
 
 .button-container {
-    margin-top: 300px; 
+    margin-top: 110px; 
     margin-bottom: 400px; 
     
 }
 
 .features {
-    max-width: 800px;
+    
     text-align: left;
     color: white;
     margin-top: 200px; 
@@ -102,7 +109,7 @@ main {
 }
 
 .features strong {
-    color: #f4b400;
+    color: #2d7d80;
 }
 
 .btn {
@@ -126,16 +133,17 @@ main {
 }
 
 .text-background {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #071a20;
     color: #fff;
     padding: 20px 0;
     margin-top: auto;
+    
 }
 
 .footer-container {
@@ -145,6 +153,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
+   
 }
 
 .footer-section {
@@ -156,7 +165,7 @@ footer {
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #f4b400;
+    color: #0998d1;
 }
 
 .footer-section p,
@@ -178,6 +187,7 @@ footer {
     border-top: 1px solid #555;
     padding-top: 10px;
     color: #ccc;
+    
 }
 
 @media (max-width: 768px) {
