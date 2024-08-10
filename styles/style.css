@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/*paleta
+preto #000000
+branco #FFFFFF
+cinza de payne #4A636D
+azul celeste #7EC4CF
+azul cerúlio #277890
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +15,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nunito' ;
     background-color: rgb(113, 155, 86);
     display: flex;
     flex-direction: column;
@@ -22,8 +30,7 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5;
-}
+    opacity: 0.5;}
 
 header {
     background-color: transparent;
@@ -47,19 +54,15 @@ header h1, header h2 {
 
 header h1 {
     margin-bottom: 10px;
-    text-align: center;
-
 }
 
 header h2 {
     margin-bottom: 20px;
-    margin-top: 200px;
-    text-align: center;
-
 }
 
 .fade-in-move-up {
     animation: fadeInMoveUp 3s ease-in-out;
+    max-width: 500px;
 }
 
 @keyframes fadeInMoveUp {
@@ -89,7 +92,7 @@ main {
 }
 
 .features {
-    
+    max-width: 800px;
     text-align: left;
     color: white;
     margin-top: 200px; 
@@ -109,13 +112,13 @@ main {
 }
 
 .features strong {
-    color: #2d7d80;
+    color: #f4b400;
 }
 
 .btn {
     padding: 15px 40px;
     border-radius: 100px;
-    background-color: #277890;
+    background-color: #29a9c0;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
@@ -161,11 +164,10 @@ footer {
     margin: 10px;
     min-width: 200px;
 }
-
 .footer-section h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #0998d1;
+    color: #f4b400;
 }
 
 .footer-section p,
@@ -178,7 +180,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #f4b400;
+    color: #177f86;
 }
 
 .footer-bottom {

@@ -6,26 +6,33 @@
     <title>Myserve</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    </style>
+    
 </head>
 <body>
     <video autoplay muted loop id="background-video">
-        <source src="cloudv1.mp4" type="video/mp4">
+        <source src="/video/cloudv1.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
+
     <header>
         <img src="image/MY_SERVER.png" alt="Logo" class="logo">
-        <h1 class="fade-in-move-up">Bem-vindo ao MY SERVER</h1>
-        <h2 class="fade-in-move-up"> A solução definitiva para armazenar, gerenciar e compartilhar seus arquivos na nuvem.</h2>
+        <h1 class="fade-in-move-up">MY SERVER</h1>
+        <h2 class="fade-in-move-up">Bem-vindo ao MY SERVER, a solução definitiva para armazenar, gerenciar e compartilhar seus arquivos na nuvem com segurança e praticidade.</h2>
     </header>
+
     <main>
         <div class="button-container">
             <a href="navegação/option1.html" class="btn btn-white btn-animate">ENTRAR</a>
         </div>
+
         <section class="features text-background">
             <h2>Recursos Principais</h2>
             <ul>
                 <li><strong>Upload Simples e Rápido:</strong> Com apenas alguns cliques, faça upload de seus documentos, fotos, vídeos e outros arquivos diretamente para a nuvem. Nossa interface amigável permite arrastar e soltar arquivos facilmente.</li>
-                <li><strong>Armazenamento Seguro:</strong> Seus dados são criptografados durante o upload e armazenados em servidores seguros, garantindo que suas informações estejam protegidas contra acessos não autorizados.</li>
+                <li><strong>Armazenamento Seguro:</strong>.</li>
                 <li><strong>Acesso de Qualquer Lugar:</strong> Acesse seus arquivos a qualquer momento, de qualquer dispositivo conectado à internet. Seja no seu computador, tablet ou smartphone, seus dados estão sempre ao seu alcance.</li>
                 <li><strong>Compartilhamento Facilitado:</strong> Compartilhe arquivos e pastas com amigos, familiares ou colegas de trabalho de forma simples e rápida. Controle as permissões de acesso e mantenha o controle sobre seus dados.</li>
                 <li><strong>Backup Automático:</strong> Configure backups automáticos para garantir que seus arquivos importantes estejam sempre seguros e atualizados. Nunca mais perca dados devido a falhas no dispositivo.</li>
@@ -37,39 +44,40 @@
                 <li><strong>Criptografia de Ponta a Ponta:</strong> Protegemos seus dados com criptografia avançada tanto durante o upload quanto no armazenamento.</li>
                 <li><strong>Autenticação em Duas Etapas:</strong> Adicione uma camada extra de segurança à sua conta com a autenticação em duas etapas.</li>
                 <li><strong>Política de Privacidade Transparente:</strong> Respeitamos sua privacidade e garantimos que seus dados não serão compartilhados sem sua autorização.</li>
-
+            </ul>
+            <h2>Suporte ao Cliente</h2>
+            <ul>
+                <li>Nosso suporte ao cliente está disponível 24/7 para ajudar você com qualquer dúvida ou problema. Acesse nosso centro de ajuda ou entre em contato diretamente com nossa equipe via chat, e-mail ou telefone.</li>
+            </ul>
+            <p>Experimente o CloudUp hoje mesmo e descubra como é fácil manter seus arquivos seguros e acessíveis na nuvem!</p>
+            <p>CloudUp – Armazenamento inteligente para a vida moderna.</p>
         </section>
     </main>
     <footer>
         <div class="footer-container">
+
             <div class="footer-section">
                 <h3>Sobre Nós</h3>
-                <p>Breve descrição sobre a empresa ou site.</p>
+                <p>Um site simples e rápido para upload e download de tudo que você quiser.</p>
             </div>
-            <div class="footer-section">
-                <h3>Navegação</h3>
-                <ul>
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
+
             <div class="footer-section">
                 <h3>Contato</h3>
-                <p>Email: contato@exemplo.com</p>
-                <p>Telefone: (11) 1234-5678</p>
+                <p>Github: <a href="https://github.com/yMatheusFernandes" target="_blank">Matheus Fernandes</a></p>
+                <p>Github: <a href="https://github.com/brennovic" target="_blank">Brenno Victor</a></p>
             </div>
-            <div class="footer-section">
-                <h3>Siga-nos</h3>
-                <a href="#"><img src="icone-facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="icone-twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="icone-instagram.png" alt="Instagram"></a>
-            </div>
+
         </div>
+
+        <!--creditos-->
         <div class="footer-bottom">
             <p>&copy; 2024 Matheus Fernandes e Brenno Victor. Todos os direitos reservados.</p>
         </div>
+        <!--creditos-->
+
     </footer>
+
+    <script src="backend/serve.js"></script>
+
 </body>
 </html>
