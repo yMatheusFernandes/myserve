@@ -25,9 +25,7 @@
             <a href="#">Forgot password?</a>
         </div>
         <button type="submit" onclick="logar(); return false" class="btn">Login</button>
-        <div>
-            <p>*temporario <a href="upload.html">upload</a></p>
-        </div>
+        
         <div class="register link">
             <p>Não tem acesso à conta? <a href="#">Register</a></p>
         </div>
@@ -40,7 +38,7 @@
         
         if(Username === "admin" && Password === "admin"){
             alert('Sucesso');
-            location.href = "home.html";
+            location.href = "upload.html";
         } else {
             alert('Erro');
         }
