@@ -4,11 +4,13 @@ body {
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     height: 100vh; /* Define a altura da tela inteira */
-    background-color: #528fa7;
+    background-color: #70c7e9;
     /*background: url(CLOUD.jpg) no-repeat center center; /* Define a imagem de fundo */
     background-size: cover; /* Cobre toda a tela com a imagem de fundo */
     margin: 0; /* Remove margens padrão */
     font-family: Arial, sans-serif; /* Define a fonte padrão */
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 /* Definição da animação fade-in */
@@ -23,15 +25,17 @@ body {
 
 /* Estilos para o contêiner do formulário */
 .wrapper {
-    background-color: transparent; /* Define a cor de fundo branca com transparência */
+    position: absolute;
+    background-color: #ffff; /* Define a cor de fundo branca com transparência */
     border: 2px solid rgba(255, 255, 255, 0.2); /* Define a borda */
-    backdrop-filter: blur(20px);
-    padding: 20px; /* Define um espaçamento interno de 20px */
+    padding: 30px; /* Define um espaçamento interno de 20px */
     border-radius: 8px; /* Arredonda os cantos do contêiner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
     width: 300px; /* Define a largura do contêiner */
     opacity: 0; /* Define a opacidade inicial */
     animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
+
+    z-index: 2;
 }
 
 /* Estilos para o formulário */
@@ -42,7 +46,7 @@ form {
 
 /* Estilos para o título do formulário */
 h1 {
-    color: #fff;
+    color: #29a9c0;
     margin-bottom: 20px; /* Adiciona um espaçamento inferior */
     font-size: 24px; /* Define o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
@@ -101,7 +105,7 @@ h1 {
 
 /* Estilos para o botão de login */
 .btn {
-    background-color: #7ec4cf; /* Define a cor de fundo */
+    background-color: #29a9c0; /* Define a cor de fundo */
     color: #fff; /* Define a cor do texto como branco */
     padding: 10px; /* Adiciona um espaçamento interno */
     border: none; /* Remove a borda */
@@ -134,4 +138,22 @@ h1 {
 /* Efeito de hover para o link de registro */
 .register a:hover {
     text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+.cloudlogin{
+    position: relative;
+    top: 210px;
+    left: -170px;
+
+}
+.cloudlogin2{
+    position: relative;
+    top: 0px;
+    left: 400px;
+
+}
+.sun_position{
+    position: relative;
+    top: -210px;
+    right: 600px;
+    z-index: 1;
 }

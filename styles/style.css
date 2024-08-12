@@ -169,7 +169,8 @@ main {
 .recursos{
     display: flex;
     color: #177f86;
-    background-color: #071a20;
+    font-size: 30px;
+    background: transparent;
     padding: 12px;
     border-radius: 10px;
 }
