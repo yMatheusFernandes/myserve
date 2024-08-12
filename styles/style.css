@@ -21,8 +21,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     
-    overflow-x: hidden;
     
+    overflow-x: hidden;
     
 }
 
@@ -157,7 +157,13 @@ main {
     overflow: visible; /* Certifique-se de que o overflow está visível */
     z-index: 0; /* Div 1 ficará abaixo de Div 2 */
 }
-
+.recursos{
+    display: flex;
+    color: #177f86;
+    background-color: #071a20;
+    padding: 12px;
+    border-radius: 10px;
+}
 
 .features {
     
