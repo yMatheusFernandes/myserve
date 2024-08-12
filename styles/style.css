@@ -55,7 +55,16 @@ header h1 {
     display: flex;
     justify-content: center;
     color: white;
+} 
+
+.cloud_p{
+    position: relative;  
+    top: -20px;
+    right: 30px;
+    width: 170px;
+    height: 200px;
 }
+
 .centralize-h2 {
 
     display: flex;
@@ -73,32 +82,29 @@ header h1 {
     position: absolute;
     
    
-    z-index: 2; /* Div 2 ficará acima de Div 1 */
+    z-index: 2; 
 }
 
 div h2 {
-    
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    right: 70px;
     margin-top: 100px;
     margin-bottom: 20px;
     color: #29a9c0; /* Garanta que o texto seja branco para contrastar com a imagem */
     text-align: center;
     position: relative; /* Necessário para o z-index funcionar */
-    background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 20px;
-    border-radius: 30px;
-    min-height: 200px;
-    width: 100%;
-    background-size: contain; /* Garante que a imagem da nuvem inteira seja visível */
+    /*background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
     
-    display: flex; /* Para centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
+     
+    
+   
 
-    
+    z-index: 2;
 
 }
+
 
 
 
@@ -132,11 +138,14 @@ main {
 
 .button-container {
    
-    display: flex;
+    position: relative;
+    top: 300px;
+    left: 600px;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     height: 100vh; /* Ocupa 100% da altura da viewport para centralizar verticalmente */
     margin-top: 0px;
+    
     
 }
 
@@ -164,6 +173,7 @@ main {
     padding: 12px;
     border-radius: 10px;
 }
+
 
 .features {
     
@@ -197,7 +207,7 @@ main {
 
 .btn {
     padding: 15px 40px;
-    border-radius: 10px;
+    border-radius: 40px;
     background-color: #7ec4cf;
     color: #fff;
     text-transform: uppercase;
@@ -215,6 +225,60 @@ main {
     transform: translateY(0px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+.btn-white {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #29a9c0;
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 .text-background {
 
@@ -249,6 +313,25 @@ main {
     height: auto;
     z-index: 2; /* Garante que a imagem fique acima do texto */
     
+
+}
+.acesso{
+    position: absolute; /* Permite que a imagem seja posicionada livremente */
+    top: 50%; /* Centraliza verticalmente */
+    right: 250%; /* Move a imagem para a direita do text-background */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para ficar na borda do text-background */
+    width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    z-index: 2; /* Garante que a imagem fique acima do texto */
+}
+.share{
+    position: absolute; /* Permite que a imagem seja posicionada livremente */
+    top: 50%; /* Centraliza verticalmente */
+    left: 170%; /* Move a imagem para a direita do text-background */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para ficar na borda do text-background */
+    width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    z-index: 2; /* Garante que a imagem fique acima do texto */
 
 }
 

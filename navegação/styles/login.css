@@ -4,7 +4,8 @@ body {
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     height: 100vh; /* Define a altura da tela inteira */
-    background: url(CLOUD.jpg) no-repeat center center; /* Define a imagem de fundo */
+    background-color: #528fa7;
+    /*background: url(CLOUD.jpg) no-repeat center center; /* Define a imagem de fundo */
     background-size: cover; /* Cobre toda a tela com a imagem de fundo */
     margin: 0; /* Remove margens padrão */
     font-family: Arial, sans-serif; /* Define a fonte padrão */
@@ -41,6 +42,7 @@ form {
 
 /* Estilos para o título do formulário */
 h1 {
+    color: #fff;
     margin-bottom: 20px; /* Adiciona um espaçamento inferior */
     font-size: 24px; /* Define o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
@@ -58,7 +60,7 @@ h1 {
     padding: 10px; /* Adiciona um espaçamento interno */
     padding-left: 40px; /* Adiciona um espaçamento interno à esquerda */
     border: 1px solid #ccc; /* Define uma borda cinza clara */
-    border-radius: 4px; /* Arredonda os cantos */
+    border-radius: 40px; /* Arredonda os cantos */
 }
 
 /* Estilos para os ícones dentro dos campos de entrada */
@@ -103,7 +105,7 @@ h1 {
     color: #fff; /* Define a cor do texto como branco */
     padding: 10px; /* Adiciona um espaçamento interno */
     border: none; /* Remove a borda */
-    border-radius: 4px; /* Arredonda os cantos */
+    border-radius: 40px; /* Arredonda os cantos */
     cursor: pointer; /* Altera o cursor para um ponteiro no hover */
     font-size: 16px; /* Define o tamanho da fonte */
 }
