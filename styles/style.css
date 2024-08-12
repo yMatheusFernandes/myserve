@@ -16,29 +16,29 @@ azul cerúlio #277890
 
 body {
     font-family: 'Nunito' ;
-    background-color: rgb(113, 155, 86);
+    background-color: #29a9c0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    
+    overflow-x: hidden;
+    
+    
 }
 
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    opacity: 0.5;}
+
 
 header {
-    background-color: transparent;
-    padding: 20px 0;
+
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    
+    
 }
 
 header img.logo {
@@ -56,14 +56,52 @@ header h1 {
     justify-content: center;
     color: white;
 }
+.centralize-h2 {
 
-header h2 {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente dentro do div */
+    align-items: center; /* Centraliza verticalmente dentro do div */
+  
+
+    width: 100%; /* Diminui a largura do contêiner */
+    height: 0px; /* Define a altura específica */
+    min-height: 0px; /* Define a altura mínima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 10px; /* Reduz o padding */
+    margin-top: 120px;
+
+    position: absolute;
+    
+   
+    z-index: 2; /* Div 2 ficará acima de Div 1 */
+}
+
+div h2 {
+    
     margin-top: 100px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    color: white;
+    color: #29a9c0; /* Garanta que o texto seja branco para contrastar com a imagem */
+    text-align: center;
+    position: relative; /* Necessário para o z-index funcionar */
+    background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 200px;
+    width: 100%;
+    background-size: contain; /* Garante que a imagem da nuvem inteira seja visível */
+    
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+
+    
+
 }
+
+
+
 
 .fade-in-move-up {
     animation: fadeInMoveUp 3s ease-in-out;
@@ -88,19 +126,50 @@ main {
     justify-content: center;
     flex: 1;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .button-container {
-    margin-top: 110px; 
-    margin-bottom: 100px; 
+   
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa 100% da altura da viewport para centralizar verticalmente */
+    margin-top: 0px;
     
 }
 
+.cloud-position{
+    position: relative;
+    top: 30px;
+    right: 170px;
+    width: 300px;
+    height: 200px;
+    overflow: visible; /* Certifique-se de que o overflow está visível */
+}
+
+.cloud-position_2{
+    position: relative;
+    left: 1080px;
+    width: 0px;
+    height: 0px;
+    overflow: visible; /* Certifique-se de que o overflow está visível */
+    z-index: 0; /* Div 1 ficará abaixo de Div 2 */
+}
+
+
 .features {
+    
     max-width: 800px;
-    text-align: left;
+    max-height: 500px;
+    height: 500px;
+    text-align: center;
     color: white;
-    margin-top: 200px; 
+    margin-top: 10px; 
+   
+    font-size: 27px; /* Aumenta o tamanho do texto */
+    
 }
 
 .features h2 {
@@ -117,17 +186,18 @@ main {
 }
 
 .features strong {
-    color: #7EC4CF;
+    color: #177f86;
 }
 
 .btn {
     padding: 15px 40px;
-    border-radius: 100px;
-    background-color: #29a9c0;
+    border-radius: 10px;
+    background-color: #7ec4cf;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.2s;
+   
 }
 
 .btn:hover {
@@ -141,9 +211,39 @@ main {
 }
 
 .text-background {
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 20px;
+
+    
+    background-color: #071a20;
+    padding: 50px;
     border-radius: 10px;
+
+    position: relative;
+    margin-top: 100px; /* Ajusta a distância do topo */
+    margin-right: 900px; /* Ajusta a distância da esquerda */
+    height: 500px; /* Aumenta a altura para 300px */
+    
+}
+.text-background_2 {
+    
+    background-color: #071a20;
+    padding: 50px;
+    border-radius: 10px;
+    
+    margin-top: 100px; /* Ajusta a distância do topo */
+    margin-left: 900px; /* Ajusta a distância da esquerda */
+    height: 500px; /* Aumenta a altura para 300px */
+}
+
+.upload{
+    position: absolute; /* Permite que a imagem seja posicionada livremente */
+    top: 50%; /* Centraliza verticalmente */
+    left: 170%; /* Move a imagem para a direita do text-background */
+    transform: translate(-50%, -50%); /* Ajusta o posicionamento para ficar na borda do text-background */
+    width: 150px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    z-index: 2; /* Garante que a imagem fique acima do texto */
+    
+
 }
 
 footer {
@@ -203,4 +303,4 @@ footer {
         align-items: center;
         text-align: center;
     }
-}
+}  
