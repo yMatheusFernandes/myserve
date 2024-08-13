@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #visualizaçao{
-            border: 1px solid black;
-            height: 300px;
-            width: 300px;
-        }
-    </style>
+    <title>Upload e Download de Arquivos</title>
 </head>
 <body>
-    <label for="arquivo">Selecione</label>
-    <input type="file" id="arquivo">
-    <br>
+    <h1>Upload e Download de Arquivos</h1>
 
-    <textarea rows="8" cols="50" id="preview"></textarea>
+    <!-- Formulário para Upload de Arquivos -->
+    <input type="file" id="fileInput" multiple>
+    <button onclick="uploadFiles()">Upload</button>
 
-    <br>
-    <button id="download">Baixar Arquivos</button>
-    
-    <script src="../backend/serve.js"></script>
+    <!-- Botão para Download de Arquivo -->
+    <input type="text" id="filenameInput" placeholder="Nome do arquivo para download">
+    <button onclick="downloadFile()">Download</button>
+
+    <script>
+        async function uploadFiles() {
+            const files = document.getElementById('fileInput').files;
+            const formData = new FormData();
+
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            try {
+                const response = await fetch('http://localhost:3000/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    alert('Upload feito com sucesso!');
+                } else {
+                    alert('Erro no upload');
+                }
+            } catch (error) {
+                alert('Erro: ' + error.message);
+            }
+        }
+
+        async function downloadFile() {
+            const filename = document.getElementById('filenameInput').value;
+
+            try {
+                const response = await fetch(`http://localhost:3000/download/${filename}`);
+
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                } else {
+                    alert('Arquivo não encontrado');
+                }
+            } catch (error) {
+                alert('Erro: ' + error.message);
+            }
+        }
+    </script>
 </body>
 </html>
