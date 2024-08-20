@@ -60,10 +60,11 @@ header h1 {
 .cloud_p{
     position: relative;  
     top: -20px;
-    right: 30px;
+    right: 50px;
     width: 170px;
     height: 200px;
 }
+
 
 .centralize-h2 {
 
@@ -78,10 +79,7 @@ header h1 {
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 10px; /* Reduz o padding */
     margin-top: 120px;
-
     position: absolute;
-    
-   
     z-index: 2; 
 }
 
@@ -89,20 +87,14 @@ div h2 {
     display: flex; /* Para centralizar o conteúdo */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    right: 70px;
+    right: 90px;
     margin-top: 100px;
     margin-bottom: 20px;
     color: #29a9c0; /* Garanta que o texto seja branco para contrastar com a imagem */
     text-align: center;
     position: relative; /* Necessário para o z-index funcionar */
     /*background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
-    
-     
-    
-   
-
     z-index: 2;
-
 }
 
 
@@ -137,14 +129,12 @@ main {
 }
 
 .button-container {
-   
-    position: relative;
-    top: 300px;
-    left: 600px;
+  display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     height: 100vh; /* Ocupa 100% da altura da viewport para centralizar verticalmente */
-    margin-top: 0px;
+    max-width: 100%; /* Limita a largura ao tamanho do contêiner */
+    overflow: hidden; 
     
     
 }
@@ -153,18 +143,19 @@ main {
     position: relative;
     top: 30px;
     right: 170px;
-    width: 300px;
+    width: 170px;
     height: 200px;
-    overflow: visible; /* Certifique-se de que o overflow está visível */
+    overflow: visible; 
+    z-index: 0; 
 }
 
 .cloud-position_2{
     position: relative;
-    left: 1080px;
+    right: -1050px;
     width: 0px;
     height: 0px;
-    overflow: visible; /* Certifique-se de que o overflow está visível */
-    z-index: 0; /* Div 1 ficará abaixo de Div 2 */
+    overflow: visible; 
+    z-index: 0; 
 }
 .recursos{
     display: flex;
@@ -239,15 +230,19 @@ main {
     display: inline-block;
     border-radius: 100px;
     transition: all .2s;
-    position: absolute;
+   position: relative;
+   max-width: 100%;
 }
+
+   
+
 .btn::after {
     content: "";
     display: inline-block;
     height: 100%;
     width: 100%;
     border-radius: 100px;
-    position: absolute;
+   position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -387,10 +382,58 @@ footer {
     
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+@media (max-width: 600px) {
+    header img.logo {
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: 10px;
+        left: 410px;
+       
     }
-}  
+    
+    
+
+    div h2 {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        right: 80px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+        color: #29a9c0; 
+        text-align: center;
+        position: relative;
+        
+        z-index: 2;
+    }
+    .cloud_p{
+        position: relative;  
+        top: -30px;
+        right: 40px;
+        width: 170px;
+        height: 200px;
+        
+    }
+
+    .cloud-position{
+        position: relative;
+        top: 540px;
+        right: -100px;
+        width: 300px;
+        height: 200px;
+        overflow: visible; 
+    }
+
+    .cloud-position_2{
+        position: relative;
+        top: 340px;
+        left: -230px;
+        width: 0px;
+        height: 0px;
+        overflow: visible; 
+        z-index: 0; 
+    }
+
+    
+} 
