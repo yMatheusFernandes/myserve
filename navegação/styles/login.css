@@ -9,10 +9,21 @@ body {
     background-size: cover; /* Cobre toda a tela com a imagem de fundo */
     margin: 0; /* Remove margens padrão */
     font-family: Arial, sans-serif; /* Define a fonte padrão */
-    overflow-y: hidden;
     overflow-x: hidden;
+     width: 100%;
+     overflow-y: hidden;
+        height: 100%;
+    touch-action: none; /* Desabilita a rolagem com toque */
+    overscroll-behavior-y: contain; /* Evita rolagem extra em navegadores móveis */
 }
-
+html{
+    overflow-x: hidden;
+     width: 100%;
+     overflow-y: hidden;
+        height: 100%;
+    touch-action: none; /* Desabilita a rolagem com toque */
+    overscroll-behavior-y: contain; /* Evita rolagem extra em navegadores móveis */
+}
 /* Definição da animação fade-in */
 @keyframes fadeIn {
     from {
