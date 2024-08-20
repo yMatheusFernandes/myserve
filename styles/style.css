@@ -9,453 +9,447 @@ azul cerúlio #277890
 */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-
+html {
 }
 
 body {
-    font-family: 'Nunito' ;
-    background-color: #29a9c0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    
-    
-    overflow-x: hidden;
-    
+  font-family: "Nunito";
+  background-color: #29a9c0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  overflow-x: hidden;
 }
 
-
-
 header {
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: transparent;
-    
-    
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: transparent;
 }
 
 header img.logo {
-    width: 50px;
-    height: auto;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-   
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 header h1 {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    color: white;
-} 
-
-.cloud_p{
-    position: relative;  
-    top: -20px;
-    right: 50px;
-    width: 170px;
-    height: 200px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
 
+.cloud_p {
+  position: relative;
+  top: -20px;
+  right: 50px;
+  width: 170px;
+  height: 200px;
+}
 
 .centralize-h2 {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente dentro do div */
+  align-items: center; /* Centraliza verticalmente dentro do div */
 
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente dentro do div */
-    align-items: center; /* Centraliza verticalmente dentro do div */
-  
-
-    width: 100%; /* Diminui a largura do contêiner */
-    height: 0px; /* Define a altura específica */
-    min-height: 0px; /* Define a altura mínima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 10px; /* Reduz o padding */
-    margin-top: 120px;
-    position: absolute;
-    z-index: 2; 
+  width: 100%; /* Diminui a largura do contêiner */
+  height: 0px; /* Define a altura específica */
+  min-height: 0px; /* Define a altura mínima */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  padding: 10px; /* Reduz o padding */
+  margin-top: 120px;
+  position: absolute;
+  z-index: 2;
 }
 
 div h2 {
-    display: flex; /* Para centralizar o conteúdo */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    right: 90px;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    color: #29a9c0; /* Garanta que o texto seja branco para contrastar com a imagem */
-    text-align: center;
-    position: relative; /* Necessário para o z-index funcionar */
-    /*background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
-    z-index: 2;
+  display: flex; /* Para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  right: 90px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: #29a9c0; /* Garanta que o texto seja branco para contrastar com a imagem */
+  text-align: center;
+  position: relative; /* Necessário para o z-index funcionar */
+  /*background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
+  z-index: 2;
 }
 
-
-
-
-
 .fade-in-move-up {
-    animation: fadeInMoveUp 3s ease-in-out;
-    max-width: 500px;
+  animation: fadeInMoveUp 3s ease-in-out;
+  max-width: 500px;
 }
 
 @keyframes fadeInMoveUp {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
 .button-container {
   display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Ocupa 100% da altura da viewport para centralizar verticalmente */
-    max-width: 100%; /* Limita a largura ao tamanho do contêiner */
-    overflow: hidden; 
-    
-    
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Ocupa 100% da altura da viewport para centralizar verticalmente */
+  max-width: 100%; /* Limita a largura ao tamanho do contêiner */
+  overflow: hidden;
 }
 
-.cloud-position{
-    position: relative;
-    top: 30px;
-    right: 170px;
-    width: 170px;
-    height: 200px;
-    overflow: visible; 
-    z-index: 0; 
+.cloud-position {
+  position: relative;
+  top: 30px;
+  right: 170px;
+  width: 170px;
+  height: 200px;
+  overflow: visible;
+  z-index: 0;
 }
 
-.cloud-position_2{
-    position: relative;
-    right: -1050px;
-    width: 0px;
-    height: 0px;
-    overflow: visible; 
-    z-index: 0; 
+.cloud-position_2 {
+  position: relative;
+  right: -1050px;
+  width: 0px;
+  height: 0px;
+  overflow: visible;
+  z-index: 0;
 }
-.recursos{
-    display: flex;
-    color: #177f86;
-    font-size: 30px;
-    background: transparent;
-    padding: 12px;
-    border-radius: 10px;
+.recursos {
+  display: flex;
+  color: #177f86;
+  font-size: 30px;
+  background: transparent;
+  padding: 12px;
+  border-radius: 10px;
 }
-
 
 .features {
-    
-    max-width: 800px;
-    max-height: 500px;
-    height: 500px;
-    text-align: center;
-    color: white;
-    margin-top: 10px; 
-   
-    font-size: 27px; /* Aumenta o tamanho do texto */
-    
+  max-width: 800px;
+  max-height: 500px;
+  height: 500px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+
+  font-size: 27px; /* Aumenta o tamanho do texto */
 }
 
 .features h2 {
-    margin-bottom: 20px;
-    text-align: center;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .features ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .features li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .features strong {
-    color: #177f86;
+  color: #177f86;
 }
 
 .btn {
-    padding: 15px 40px;
-    border-radius: 40px;
-    background-color: #7ec4cf;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.2s;
-   
+  padding: 15px 40px;
+  border-radius: 40px;
+  background-color: #7ec4cf;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
 .btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-    transform: translateY(0px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(0px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .btn-white {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #fff;
-    color: #29a9c0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #29a9c0;
 }
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 100px;
-    transition: all .2s;
-   position: relative;
-   max-width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+  max-width: 100%;
 }
 
-   
-
 .btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-   position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
 }
 
 .btn-white::after {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 .btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInBottom {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
-
 
 .text-background {
+  background-color: #071a20;
+  padding: 50px;
+  border-radius: 10px;
 
-    
-    background-color: #071a20;
-    padding: 50px;
-    border-radius: 10px;
-
-    position: relative;
-    margin-top: 100px; /* Ajusta a distância do topo */
-    margin-right: 900px; /* Ajusta a distância da esquerda */
-    height: 500px; /* Aumenta a altura para 300px */
-    
+  position: relative;
+  margin-top: 100px; /* Ajusta a distância do topo */
+  margin-right: 900px; /* Ajusta a distância da esquerda */
+  height: 500px; /* Aumenta a altura para 300px */
 }
 .text-background_2 {
-    
-    background-color: #071a20;
-    padding: 50px;
-    border-radius: 10px;
-    
-    margin-top: 100px; /* Ajusta a distância do topo */
-    margin-left: 900px; /* Ajusta a distância da esquerda */
-    height: 500px; /* Aumenta a altura para 300px */
+  background-color: #071a20;
+  padding: 50px;
+  border-radius: 10px;
+
+  margin-top: 100px; /* Ajusta a distância do topo */
+  margin-left: 900px; /* Ajusta a distância da esquerda */
+  height: 500px; /* Aumenta a altura para 300px */
 }
 
-.upload{
-    position: absolute; /* Permite que a imagem seja posicionada livremente */
-    top: 50%; /* Centraliza verticalmente */
-    left: 170%; /* Move a imagem para a direita do text-background */
-    transform: translate(-50%, -50%); /* Ajusta o posicionamento para ficar na borda do text-background */
-    width: 150px; /* Ajusta o tamanho da imagem */
-    height: auto;
-    z-index: 2; /* Garante que a imagem fique acima do texto */
-    
-
+.upload {
+  position: absolute; /* Permite que a imagem seja posicionada livremente */
+  top: 50%; /* Centraliza verticalmente */
+  left: 170%; /* Move a imagem para a direita do text-background */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta o posicionamento para ficar na borda do text-background */
+  width: 150px; /* Ajusta o tamanho da imagem */
+  height: auto;
+  z-index: 2; /* Garante que a imagem fique acima do texto */
 }
-.acesso{
-    position: absolute; /* Permite que a imagem seja posicionada livremente */
-    top: 50%; /* Centraliza verticalmente */
-    right: 250%; /* Move a imagem para a direita do text-background */
-    transform: translate(-50%, -50%); /* Ajusta o posicionamento para ficar na borda do text-background */
-    width: 150px; /* Ajusta o tamanho da imagem */
-    height: auto;
-    z-index: 2; /* Garante que a imagem fique acima do texto */
+.acesso {
+  position: absolute; /* Permite que a imagem seja posicionada livremente */
+  top: 50%; /* Centraliza verticalmente */
+  right: 250%; /* Move a imagem para a direita do text-background */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta o posicionamento para ficar na borda do text-background */
+  width: 150px; /* Ajusta o tamanho da imagem */
+  height: auto;
+  z-index: 2; /* Garante que a imagem fique acima do texto */
 }
-.share{
-    position: absolute; /* Permite que a imagem seja posicionada livremente */
-    top: 50%; /* Centraliza verticalmente */
-    left: 170%; /* Move a imagem para a direita do text-background */
-    transform: translate(-50%, -50%); /* Ajusta o posicionamento para ficar na borda do text-background */
-    width: 150px; /* Ajusta o tamanho da imagem */
-    height: auto;
-    z-index: 2; /* Garante que a imagem fique acima do texto */
-
+.share {
+  position: absolute; /* Permite que a imagem seja posicionada livremente */
+  top: 50%; /* Centraliza verticalmente */
+  left: 170%; /* Move a imagem para a direita do text-background */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta o posicionamento para ficar na borda do text-background */
+  width: 150px; /* Ajusta o tamanho da imagem */
+  height: auto;
+  z-index: 2; /* Garante que a imagem fique acima do texto */
 }
 
 footer {
-    background-color: #071a20;
-    color: #fff;
-    padding: 20px 0;
-    margin-top: auto;
-    
+  background-color: #071a20;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: auto;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
-   
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 .footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
 }
 .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #00d8f4;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #00d8f4;
 }
 
 .footer-section p,
 .footer-section a {
-    font-size: 14px;
-    color: #ccc;
-    text-decoration: none;
-    margin-bottom: 8px;
-    display: block;
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .footer-section a:hover {
-    color: #177f86;
+  color: #177f86;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #555;
-    padding-top: 10px;
-    color: #ccc;
-    
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  color: #ccc;
 }
 
-@media (max-width: 600px) {
-    body {
-        font-family: 'Nunito' ;
-        background-color: #29a9c0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        touch-action: pan-y; 
-        overflow-x: hidden;
-        width: 100%;
-        
-    }      
-    html{
-        touch-action: pan-y; 
-        overflow-x: hidden;
-        width: 100%;
-    }  
-    
+@media (min-width: 300px) and (max-width: 768px) {
+  body {
+    font-family: "Nunito";
+    background-color: #29a9c0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    touch-action: pan-y;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  html {
+    touch-action: pan-y;
+    overflow-x: hidden;
+    width: 100%;
+  }
 
+  header img.logo {
+    width: 50px;
+    height: auto;
+    position: relative;
+    top: 0px;
+    left: 330px;
+  }
 
-    header img.logo {
-        width: 50px;
-        height: auto;
-        position: absolute;
-        top: 10px;
-        left: 410px;
-       
-    }
-    
-    
+  div h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 80px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #29a9c0;
+    text-align: center;
+    position: relative;
 
-    div h2 {
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        right: 80px;
-        margin-top: 100px;
-        margin-bottom: 20px;
-        color: #29a9c0; 
-        text-align: center;
-        position: relative;
-        
-        z-index: 2;
-    }
-    .cloud_p{
-        position: relative;  
-        top: -30px;
-        right: 40px;
-        width: 170px;
-        height: 200px;
-        
-    }
+    z-index: 2;
+  }
+  .cloud_p {
+    position: relative;
+    top: -30px;
+    right: 40px;
+    width: 170px;
+    height: 200px;
+  }
 
-    .cloud-position{
-        position: relative;
-        top: 540px;
-        right: -100px;
-        width: 300px;
-        height: 200px;
-        overflow: visible; 
-    }
+  .cloud-position {
+    position: relative;
+    top: 540px;
+    right: -100px;
+    width: 300px;
+    height: 200px;
+    overflow: visible;
+  }
 
-    .cloud-position_2{
-        position: relative;
-        top: 340px;
-        left: -230px;
-        width: 0px;
-        height: 0px;
-        overflow: visible; 
-        z-index: 0; 
-    }
+  .cloud-position_2 {
+    position: relative;
+    top: 500px;
+    left: -230px;
+    width: 0px;
+    height: 0px;
+    overflow: visible;
+    z-index: 0;
+  }
+  .upload {
+    display: none;
+  }
+  .acesso {
+    display: none;
+  }
+  .share {
+    display: none;
+  }
+  .text-background {
+    background-color: #071a20;
+    padding: 50px;
+    border-radius: 10px;
 
-    
-} 
+    position: relative;
+    margin-top: 100px; /* Ajusta a distância do topo */
+    margin-right: 0px; /* Ajusta a distância da esquerda */
+    height: 500px; /* Aumenta a altura para 300px */
+  }
+  .text-background_2 {
+    background-color: #071a20;
+    padding: 50px;
+    border-radius: 10px;
+
+    margin-top: 100px; /* Ajusta a distância do topo */
+    margin-left: 0px; /* Ajusta a distância da esquerda */
+    height: 500px; /* Aumenta a altura para 300px */
+  }
+}
