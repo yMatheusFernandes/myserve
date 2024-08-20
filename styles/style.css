@@ -383,6 +383,19 @@ footer {
 }
 
 @media (max-width: 600px) {
+    body {
+        font-family: 'Nunito' ;
+        background-color: #29a9c0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        touch-action: pan-y; 
+        overflow-x: hidden;
+        width: 100%;
+        
+    }        
+
+
     header img.logo {
         width: 50px;
         height: auto;
