@@ -13,6 +13,9 @@ azul cerúlio #277890
     margin: 0;
     box-sizing: border-box;
 }
+html{
+
+}
 
 body {
     font-family: 'Nunito' ;
@@ -393,7 +396,13 @@ footer {
         overflow-x: hidden;
         width: 100%;
         
-    }        
+    }      
+    html{
+        touch-action: pan-y; 
+        overflow-x: hidden;
+        width: 100%;
+    }  
+    
 
 
     header img.logo {
