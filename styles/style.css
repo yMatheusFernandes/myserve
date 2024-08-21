@@ -18,7 +18,8 @@ html {
 
 body {
   font-family: "Nunito";
-  background-color: #29a9c0;
+  background: rgb(2,0,36);
+background: linear-gradient(360deg, rgba(2,0,36,1) 35%, rgba(41,169,192,1) 70%, rgba(0,212,255,1) 100%);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
