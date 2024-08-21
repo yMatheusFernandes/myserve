@@ -437,7 +437,7 @@ footer {
     background-color: #071a20;
     padding: 50px;
     border-radius: 10px;
-
+    font-size: 160%;
     position: relative;
     margin-top: 100px; /* Ajusta a distância do topo */
     margin-right: 0px; /* Ajusta a distância da esquerda */
@@ -447,9 +447,16 @@ footer {
     background-color: #071a20;
     padding: 50px;
     border-radius: 10px;
-
+    font-size: 160%;
     margin-top: 100px; /* Ajusta a distância do topo */
     margin-left: 0px; /* Ajusta a distância da esquerda */
     height: 500px; /* Aumenta a altura para 300px */
+  }
+  header img.logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
   }
 }
