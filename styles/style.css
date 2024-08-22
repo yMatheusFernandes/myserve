@@ -51,6 +51,19 @@ header h1 {
   justify-content: center;
   color: white;
 }
+.head_button{
+position: relative;
+top: -43px;
+left: 630px;
+text-decoration: none;
+text-align: center;
+color: #00d8f4;
+background-color: #fff;
+padding: 8px 8px;
+border-radius: 10px;
+
+
+}
 
 .cloud_p {
   position: relative;
@@ -62,30 +75,30 @@ header h1 {
 
 .centralize-h2 {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente dentro do div */
-  align-items: center; /* Centraliza verticalmente dentro do div */
+  justify-content: center; 
+  align-items: center; 
 
-  width: 100%; /* Diminui a largura do contêiner */
-  height: 0px; /* Define a altura específica */
-  min-height: 0px; /* Define a altura mínima */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px; /* Reduz o padding */
+  width: 100%; 
+  height: 0px; 
+  min-height: 0px; 
+  margin: 0 auto; 
+  padding: 10px; 
   margin-top: 120px;
   position: absolute;
   z-index: 2;
 }
 
 div h2 {
-  display: flex; /* Para centralizar o conteúdo */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   right: 90px;
   margin-top: 100px;
   margin-bottom: 20px;
-  color: #29a9c0; /* Garanta que o texto seja branco para contrastar com a imagem */
+  color: #29a9c0; 
   text-align: center;
-  position: relative; /* Necessário para o z-index funcionar */
-  /*background-image: url('tl.png'); /* Certifique-se de que a URL da imagem está correta */
+  position: relative;
+  /*background-image: url('tl.png');  */
   z-index: 2;
 }
 
@@ -118,10 +131,10 @@ main {
 
 .button-container {
   display: flex;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  height: 100vh; /* Ocupa 100% da altura da viewport para centralizar verticalmente */
-  max-width: 100%; /* Limita a largura ao tamanho do contêiner */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  max-width: 100%;
   overflow: hidden;
 }
 
@@ -152,16 +165,27 @@ main {
   border-radius: 10px;
 }
 
-.features {
+.features_left {
   max-width: 800px;
   max-height: 500px;
   height: 500px;
-  text-align: center;
+  text-align: left;
   color: white;
   margin-top: 10px;
 
-  font-size: 27px; /* Aumenta o tamanho do texto */
+  font-size: 27px; 
 }
+.features_right {
+  max-width: 800px;
+  max-height: 500px;
+  height: 500px;
+  text-align: right;
+  color: white;
+  margin-top: 10px;
+
+  font-size: 27px; 
+}
+
 
 .features h2 {
   margin-bottom: 20px;
@@ -262,55 +286,56 @@ main {
   border-radius: 10px;
 
   position: relative;
-  margin-top: 100px; /* Ajusta a distância do topo */
-  margin-right: 900px; /* Ajusta a distância da esquerda */
-  height: 500px; /* Aumenta a altura para 300px */
+  margin-top: 100px; 
+  margin-right: 900px; 
+  height: 500px; 
 }
 .text-background_2 {
   background-color: #071a20;
   padding: 50px;
   border-radius: 10px;
 
-  margin-top: 100px; /* Ajusta a distância do topo */
-  margin-left: 900px; /* Ajusta a distância da esquerda */
-  height: 500px; /* Aumenta a altura para 300px */
+  margin-top: 100px; 
+  margin-left: 900px; 
+  height: 500px; 
 }
 
 .upload {
-  position: absolute; /* Permite que a imagem seja posicionada livremente */
-  top: 50%; /* Centraliza verticalmente */
-  left: 170%; /* Move a imagem para a direita do text-background */
+  position: absolute; 
+  top: 50%; 
+  left: 170%; 
   transform: translate(
     -50%,
     -50%
-  ); /* Ajusta o posicionamento para ficar na borda do text-background */
-  width: 150px; /* Ajusta o tamanho da imagem */
+  ); 
+  width: 150px; 
   height: auto;
-  z-index: 2; /* Garante que a imagem fique acima do texto */
+  z-index: 2; 
+  
 }
 .acesso {
-  position: absolute; /* Permite que a imagem seja posicionada livremente */
-  top: 50%; /* Centraliza verticalmente */
-  right: 250%; /* Move a imagem para a direita do text-background */
+  position: absolute;
+  top: 50%;
+  right: 250%; 
   transform: translate(
     -50%,
     -50%
-  ); /* Ajusta o posicionamento para ficar na borda do text-background */
-  width: 150px; /* Ajusta o tamanho da imagem */
+  ); 
+  width: 150px; 
   height: auto;
-  z-index: 2; /* Garante que a imagem fique acima do texto */
+  z-index: 2; 
 }
 .share {
-  position: absolute; /* Permite que a imagem seja posicionada livremente */
-  top: 50%; /* Centraliza verticalmente */
-  left: 170%; /* Move a imagem para a direita do text-background */
+  position: absolute; 
+  top: 50%; 
+  left: 170%; 
   transform: translate(
     -50%,
     -50%
-  ); /* Ajusta o posicionamento para ficar na borda do text-background */
-  width: 150px; /* Ajusta o tamanho da imagem */
+  );
+  width: 150px; 
   height: auto;
-  z-index: 2; /* Garante que a imagem fique acima do texto */
+  z-index: 2; 
 }
 
 footer {
@@ -409,17 +434,18 @@ footer {
 
   .cloud-position {
     position: relative;
-    top: 540px;
-    right: -100px;
+    top: 500px;
+   right: -40%;
     width: 300px;
     height: 200px;
     overflow: visible;
+   
   }
 
   .cloud-position_2 {
     position: relative;
-    top: 500px;
-    left: -230px;
+    top: 100px;
+    left: -70%;
     width: 0px;
     height: 0px;
     overflow: visible;
@@ -440,18 +466,18 @@ footer {
     border-radius: 10px;
     font-size: 160%;
     position: relative;
-    margin-top: 100px; /* Ajusta a distância do topo */
-    margin-right: 0px; /* Ajusta a distância da esquerda */
-    height: 500px; /* Aumenta a altura para 300px */
+    margin-top: 100px; 
+    margin-right: 0px; 
+    height: 500px; 
   }
   .text-background_2 {
     background-color: #071a20;
     padding: 50px;
     border-radius: 10px;
     font-size: 160%;
-    margin-top: 100px; /* Ajusta a distância do topo */
-    margin-left: 0px; /* Ajusta a distância da esquerda */
-    height: 500px; /* Aumenta a altura para 300px */
+    margin-top: 100px; 
+    margin-left: 0px; 
+    height: 500px; 
   }
   header img.logo {
     width: 50px;
@@ -460,4 +486,14 @@ footer {
     top: 10px;
     left: 10px;
   }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -200px;
+    height: 100vh; 
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
 }
