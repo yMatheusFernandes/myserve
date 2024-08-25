@@ -10,8 +10,7 @@
 <body>
     <div class="cloudlogin">
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/1b2c7f61-6a31-4d7b-813d-7420080645a5/iuxNCQGR3D.json" background="transparent" speed="0.5" style="width: 600px; height: 600px;" loop autoplay></dotlottie-player>
+        <dotlottie-player src="https://lottie.host/1b2c7f61-6a31-4d7b-813d-7420080645a5/iuxNCQGR3D.json" background="transparent" speed="0.5" style="width: 600px; height: 600px;" loop autoplay></dotlottie-player>
     </div>
 
     <div class="cloudlogin2">
@@ -20,12 +19,11 @@
     </div>
     <div class="sun_position">
         <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-
-    <dotlottie-player src="https://lottie.host/1416a44b-324f-4085-baf9-99199c921eb6/69rEvJaHoG.json" background="transparent" speed="0.5" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <dotlottie-player src="https://lottie.host/1416a44b-324f-4085-baf9-99199c921eb6/69rEvJaHoG.json" background="transparent" speed="0.5" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
     </div>
 
    <div class="wrapper">
-    <form action="">
+    <form id="loginForm">
         <h1>Login</h1>
         <div class="input-box">
             <input type="text" placeholder="Nome" id="Username" required>
@@ -40,25 +38,26 @@
             <label><input type="checkbox"> Lembre de mim</label>
             <a href="#">Esqueceu sua senha?</a>
         </div>
-        <button type="submit" onclick="logar(); return false" class="btn">ENTRAR</button>
+        <button type="submit" class="btn">ENTRAR</button>
         
         <div class="register link">
             <p>Não tem acesso à conta? <a href="#">Registrar</a></p>
         </div>
     </form>
    </div>
+
    <script>
-    function logar(){
-        var Username = document.getElementById("Username").value;
-        var Password = document.getElementById("Password").value;
-        
-        if(Username === "admin" && Password === "admin"){
-            alert('Sucesso');
-            location.href = "upload.html";
-        } else {
-            alert('Erro');
-        }
-    }
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('Username').value;
+        const password = document.getElementById('Password').value;
+
+        localStorage.setItem('username', username);
+        localStorage.setItem('password', password);
+
+        window.location.href = 'upload.html'; // Altere para o nome da sua página de destino
+    });
    </script>
 </body>
 </html>
