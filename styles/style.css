@@ -33,8 +33,11 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 5px 10px;
-  border-radius: 10px;
-  background-color: transparent;
+  border-radius: 0px;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
 }
 
 header img.logo {
@@ -49,22 +52,38 @@ header h1 {
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
-  color: white;
+  color: #29a9c0;
 }
-.head_button{
-position: relative;
-top: -43px;
-left: 630px;
+
+/*a {
 text-decoration: none;
-text-align: center;
-color: #00d8f4;
-background-color: #fff;
-padding: 8px 8px;
-border-radius: 10px;
-
-
 }
-
+.nav_list{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  
+}
+.nav_list a{
+  font-size: 16px;
+  color: #29a9c0;
+  padding-block: 16px;
+}
+.hamburger{
+border: none;
+background: none;
+border-top: 3px solid #fff;
+cursor: pointer;
+}
+.hamburger::before
+.hamburger::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #071a20;
+  margin-top: 5px;
+}*/
 .cloud_p {
   position: relative;
   top: -20px;
@@ -126,7 +145,8 @@ main {
   flex: 1;
   padding: 20px;
   background-color: #fff;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .button-container {
@@ -410,6 +430,7 @@ footer {
     top: 0px;
     left: 330px;
   }
+  
 
   div h2 {
     display: flex;
@@ -495,5 +516,35 @@ footer {
     max-width: 100%;
     overflow: hidden;
   }
+  .features_left {
+    max-width: 800px;
+    max-height: 500px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  
+    font-size: 27px; 
+  }
+  .features_right {
+    max-width: 800px;
+    max-height: 500px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  
+    font-size: 27px; 
+  }
+  header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 0px;
+    background-color: #fff;
+  }
+  
   
 }
