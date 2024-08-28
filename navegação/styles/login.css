@@ -24,6 +24,7 @@ html{
     touch-action: none; /* Desabilita a rolagem com toque */
     overscroll-behavior-y: contain; /* Evita rolagem extra em navegadores móveis */
 }
+
 /* Definição da animação fade-in */
 @keyframes fadeIn {
     from {
@@ -32,6 +33,35 @@ html{
     to {
         opacity: 1;
     }
+}
+@keyframes subir {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes descer {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.elemento-animado {
+    animation: descer 3s ease-in-out infinite;
+}
+
+
+.elemento-animado {
+    animation: subir 3s ease-in-out infinite;
+}
+.wrapper.wrapper {
+    transition: 1s;
+    transform: translateY(0px) ;
 }
 
 /* Estilos para o contêiner do formulário */
@@ -43,10 +73,29 @@ html{
     border-radius: 8px; /* Arredonda os cantos do contêiner */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
     width: 300px; /* Define a largura do contêiner */
+    height: 300px;
     opacity: 0; /* Define a opacidade inicial */
     animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
+    transition: height .2s ease;
+    z-index: 5;
+}
 
-    z-index: 2;
+.wrapper_register {
+    position: absolute;
+   
+    background-color: #ffff; /* Define a cor de fundo branca com transparência */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Define a borda */
+    padding: 30px; /* Define um espaçamento interno de 20px */
+    border-radius: 8px; /* Arredonda os cantos do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+    width: 300px; /* Define a largura do contêiner */
+    height: 350px;
+    opacity: 0; /* Define a opacidade inicial */
+    animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
+    transform: translateY(-700px);
+   /* transform: translateX(400px);*/
+
+    z-index: 4;
 }
 
 /* Estilos para o formulário */
@@ -66,11 +115,41 @@ h1 {
 /* Estilos para o contêiner dos campos de entrada */
 .input-box {
     position: relative; /* Define um posicionamento relativo */
-    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
+    margin-bottom:20px; /* Adiciona um espaçamento inferior */
+}
+.input-box-register{
+    position: relative;  
+     margin-bottom: 20px;
+     
+     z-index: 9;
+}
+
+
+
+.wrapper_register{
+    transition: 1s;
+    
+}
+    .wrapper.active {
+    transition: 1s;
+    transform: translateY(700px);
+}
+
+/* Transição do wrapper_register quando ativo */
+.wrapper_register.active2 {
+    transition: 1s;
+    transform: translateY(0px);
 }
 
 /* Estilos para os campos de entrada */
-.input-box input {
+.input-box  input {
+    width: 87%; /* Define a largura como 100% do contêiner pai */
+    padding: 10px; /* Adiciona um espaçamento interno */
+    padding-left: 40px; /* Adiciona um espaçamento interno à esquerda */
+    border: 1px solid #ccc; /* Define uma borda cinza clara */
+    border-radius: 40px; /* Arredonda os cantos */
+}
+.input-box-register input {
     width: 87%; /* Define a largura como 100% do contêiner pai */
     padding: 10px; /* Adiciona um espaçamento interno */
     padding-left: 40px; /* Adiciona um espaçamento interno à esquerda */
@@ -80,6 +159,13 @@ h1 {
 
 /* Estilos para os ícones dentro dos campos de entrada */
 .input-box i {
+    position: absolute; /* Define um posicionamento absoluto */
+    top: 50%; /* Centraliza verticalmente */
+    left: 10px; /* Define a posição à esquerda */
+    transform: translateY(-50%); /* Ajusta a posição verticalmente */
+    color: #888; /* Define a cor do ícone */
+}
+.input-box-register i {
     position: absolute; /* Define um posicionamento absoluto */
     top: 50%; /* Centraliza verticalmente */
     left: 10px; /* Define a posição à esquerda */
@@ -134,6 +220,21 @@ h1 {
 .register {
     text-align: center; /* Centraliza o texto */
 }
+.login {
+    text-align: center; /* Centraliza o texto */
+    
+}
+
+.login a{
+    color: #007bff; /* Define a cor do link */
+    text-decoration: none;
+}
+.login a:hover {
+    text-decoration: underline; /* Adiciona sublinhado no hover */
+}
+.login p{
+    font-size: 14px; /* Define o tamanho da fonte */
+}
 
 /* Estilos para o parágrafo de registro */
 .register p {
@@ -142,8 +243,8 @@ h1 {
 
 /* Estilos para o link de registro */
 .register a {
-    color: #007bff; /* Define a cor do link */
-    text-decoration: none; /* Remove o sublinhado do link */
+    color: #007bff; 
+    text-decoration: none; 
 }
 
 /* Efeito de hover para o link de registro */
@@ -154,17 +255,37 @@ h1 {
     position: relative;
     top: 210px;
     left: -170px;
+    
 
 }
 .cloudlogin2{
     position: relative;
     top: 0px;
     left: 400px;
-
+    
+    
+    
 }
 .sun_position{
     position: relative;
     top: -210px;
     right: 600px;
+    
     z-index: 1;
+    
+}
+.sun_position.active3{
+    transition: 2s;
+    transform: translateY(-20px);
+}
+@media (min-width: 300px) and (max-width: 768px) {
+    .cloudlogin{
+        transition: 2s;
+        transform: translateX(400px);
+    }
+    .cloudlogin2{
+        transition: 2s;
+        transform: translateX(-400px) translateY(-400px);
+    }
+
 }

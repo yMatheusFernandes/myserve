@@ -41,10 +41,39 @@
         <button type="submit" class="btn">ENTRAR</button>
         
         <div class="register link">
-            <p>Não tem acesso à conta? <a href="#">Registrar</a></p>
+            <p>Não tem acesso à conta? <a href="#" class="register">Registrar</a></p>
         </div>
     </form>
    </div>
+   <div class="wrapper_register">
+    <form action="registerform">
+        <h1>Registrar</h1>
+        <div class="input-box-register">
+            <input type="text" placeholder="E-mail" id="E-mail" required>
+            <i class='bx bxs-user'></i>
+        </div>
+            <div class="input-box-register">
+                <input type="text" placeholder="Nome" id="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box-register">
+                <input type="password" placeholder="Senha" id="Password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+    
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Aceito os termos e condições</label>
+                <!--<a href="#">Esqueceu sua senha?</a>-->
+            </div>
+            <button type="submit" class="btn">REGISTRAR</button>
+            
+            <div class="login link">
+                <p>Já tem acesso à conta? <a href="#" class="login">Login</a></p>
+            </div>
+      </form>
+   </div>
+  
+   
 
    <script>
     document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -59,5 +88,6 @@
         window.location.href = 'upload.html'; // Altere para o nome da sua página de destino
     });
    </script>
+   <script defer src="register.js"></script>
 </body>
 </html>
