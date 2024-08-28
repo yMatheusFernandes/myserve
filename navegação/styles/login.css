@@ -90,7 +90,7 @@ html{
     height: 300px;
     opacity: 0; /* Define a opacidade inicial */
     animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
-    transition: height .2s ease;
+    
     z-index: 5;
 }
 
@@ -107,7 +107,7 @@ html{
     opacity: 0; /* Define a opacidade inicial */
     animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
     transform: translateY(-700px);
-   /* transform: translateX(400px);*/
+ 
 
     z-index: 4;
 }

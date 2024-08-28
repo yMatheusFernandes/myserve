@@ -548,3 +548,33 @@ footer {
   
   
 }
+/* CSS para dispositivos em modo retrato (portrait) */
+@media (orientation: portrait) {
+  body {
+      /* Estilo para o modo retrato */
+      background-color: lightblue;
+  }
+}
+
+/* CSS para dispositivos em modo paisagem (landscape) */
+@media (orientation: landscape) {
+  body {
+      /* Estilo para o modo paisagem */
+      background-color: lightcoral;
+  }
+
+  /* Você pode exibir uma mensagem informando ao usuário para manter o celular na orientação retrato */
+  .landscape-warning {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      color: white;
+      padding: 20px;
+  }
+}
+
+/* Esconda a mensagem de aviso em modo retrato */
+.landscape-warning {
+  display: none;
+}
+
