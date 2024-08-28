@@ -24,6 +24,20 @@ html{
     touch-action: none; /* Desabilita a rolagem com toque */
     overscroll-behavior-y: contain; /* Evita rolagem extra em navegadores móveis */
 }
+@keyframes fadeInMoveUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in-move-up {
+    animation: fadeInMoveUp 3s ease-in-out;
+    max-width: 500px;
+  }
 
 /* Definição da animação fade-in */
 @keyframes fadeIn {
@@ -43,20 +57,20 @@ html{
     }
 }
 @keyframes descer {
-    0% {
-        transform: translateY(0);
-    }
     100% {
+        transform: translateY(0%);
+    }
+    0% {
         transform: translateY(100%);
     }
 }
 
-.elemento-animado {
-    animation: descer 3s ease-in-out infinite;
+.descer {
+    animation: descer 3s ease-in-out ;
 }
 
 
-.elemento-animado {
+.subir2 {
     animation: subir 3s ease-in-out infinite;
 }
 .wrapper.wrapper {
@@ -255,14 +269,16 @@ h1 {
     position: relative;
     top: 210px;
     left: -170px;
-    
+    opacity: 0; /* Define a opacidade inicial */
+    animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
 
 }
 .cloudlogin2{
     position: relative;
     top: 0px;
     left: 400px;
-    
+    opacity: 0; /* Define a opacidade inicial */
+    animation: fadeIn 2s ease-in-out forwards; /* Aplica a animação de fade-in */
     
     
 }
@@ -270,7 +286,6 @@ h1 {
     position: relative;
     top: -210px;
     right: 600px;
-    
     z-index: 1;
     
 }
@@ -286,6 +301,7 @@ h1 {
     .cloudlogin2{
         transition: 2s;
         transform: translateX(-400px) translateY(-400px);
+
     }
 
 }
