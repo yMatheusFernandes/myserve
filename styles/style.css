@@ -524,7 +524,7 @@ footer {
     color: white;
     margin-top: 10px;
   
-    font-size: 20px; 
+    font-size: 170%; 
   }
   .features_right {
     max-width: 800px;
@@ -534,7 +534,7 @@ footer {
     color: white;
     margin-top: 10px;
   
-    font-size: 20px; 
+    font-size: 170%; 
   }
   header {
     text-align: center;
